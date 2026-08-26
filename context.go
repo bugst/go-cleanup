@@ -13,6 +13,8 @@ import (
 )
 
 // InterruptableContext adds to a context the capability to be interrupted by the os.Interrupt signal.
+//
+// Deprecated: use signal.NotifyContext instead.
 func InterruptableContext(inCtx context.Context) (context.Context, context.CancelFunc) {
 	ctx, cancel := context.WithCancel(inCtx)
 	go func() {
