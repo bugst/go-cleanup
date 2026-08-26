@@ -1,3 +1,7 @@
+# Deprecation notice
+
+This library is depracted in favor of [`signal.NotifyContext`](https://pkg.go.dev/os/signal#NotifyContext). This repository will be archived and no more maintaned.
+
 ## go.bug.st/cleanup
 
 This library provides a `signal.Interrupt`/CTRL-C interruptable context for golang.
